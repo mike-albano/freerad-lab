@@ -19,13 +19,13 @@ Step 1. Clone this repo.
 
 Step 2. You only need to modify constants.py like so:
 
-* TARGETIP Change this to match your gNMI Target.
+* TARGETIP Change this to match your gNMI Target (openconfig.mist.com or Arista AP IP)
 * PORT = Change this to match your gNMI Targets TCP Port.
-* USER = Change this to match your gNMI Username.
-* PASSWORD Change this to match your gNMI Password.
+* USER = Change this to match your gNMI Username. (Arista AP default is admin)
+* PASSWORD Change this to match your gNMI Password. (Arista AP default is admin)
 * APMAC = Change this to your APs MAC address.
-* APNAME = # Change this to whatever you want your APs hostname to be.
-* WORKSTATIONIP = Change this to your laptops IP. This is RADIUS Server.
+* APNAME = Change this to whatever you want your APs hostname to be.
+* WORKSTATIONIP = Change this to your laptops IP. This will be your RADIUS Server.
 
 Your workstations will also be running FreeRADIUS.
 
