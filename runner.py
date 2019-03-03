@@ -45,7 +45,6 @@ def config_ap():
                     TARGET, PORT, APNAME, USER, PASSWORD), shell=True)
     return
   # Not mist; assuming Arista. Change these options dependong on vendor.
-  print('using not mist')
   subprocess.call('python /gnxi/gnmi_cli_py/py_gnmicli.py -t %s -p %s -m'
                   'set-update -x /provision-aps/provision-ap[mac=%s] '
                   '-user %s -pass %s -val @oc_provision_new.json -g -o'
