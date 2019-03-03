@@ -10,12 +10,13 @@ The one-liner is this:
 ```
 docker run -it -p 1812-1813:1812-1813/udp --mount type=bind,source=$PWD,target=/mnt/hostdir freerad-lab
 ```
-Use the included "useratexample.org.pfx" certificate in your Android or other clients.
+Use the included "test-freerad-eaptls" .1X provile for OSX.
 
-Use the included "foo.bar" for OSX.
+Use the included "useratexample.org.pfx" certificate in your Android or other clients.
 
 ## How to use this/What to modify to meet your needs
 Step 1. Clone this repo.
+
 Step 2. You only need to modify constants.py like so:
 
 * TARGETIP Change this to match your gNMI Target.
