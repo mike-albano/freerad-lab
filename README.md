@@ -8,7 +8,7 @@ Docker.
 ## TLDR;
 The one-liner is this:
 ```
-docker run -it -p 1812-1813:1812-1813/udp --mount type=bind,source=$PWD,target=/mnt/hostdir freerad-lab
+docker run -it -p 1812-1813:1812-1813/udp --mount type=bind,source=$PWD,target=/mnt/hostdir mike909/freerad-lab:v1
 ```
 Use the included "test-freerad-eaptls" .1X provile for OSX.
 
@@ -37,6 +37,6 @@ When you 'run' the above docker run command, the following takes place on your m
 * Your current directory is mounted inside the Docker container, as /mnt/hostdir
 * Upon instantiation, the container provisions your AP; eg assigns the hostname & country-code to the MAC address.
 * Next, the container configures your AP with both an OPEN and a WPA2-Enterprise SSID.
-* You can connect to the WPA2-Enterprise SSID, using EAP-TLS. The certificate is "useratexample.org.pfx". This can be added to your Android or other device.
+* You can connect to the WPA2-Enterprise SSID (test_wpa2ent), using EAP-TLS. The certificate is "useratexample.org.pfx". This can be added to your Android or other device.
 
 Note, some devices require the pfx certificate to be converted. If your using OSX, this has already been done for you; and you can install "test-freerad-eaptls.mobileconfig" (just double click it).
