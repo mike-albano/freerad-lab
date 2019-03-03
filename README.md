@@ -40,3 +40,5 @@ When you 'run' the above docker run command, the following takes place on your m
 * You can connect to the WPA2-Enterprise SSID (test_wpa2ent), using EAP-TLS. The certificate is "useratexample.org.pfx". This can be added to your Android or other device.
 
 Note, some devices require the pfx certificate to be converted. If your using OSX, this has already been done for you; and you can install "test-freerad-eaptls.mobileconfig" (just double click it).
+
+If you want to modify the container so it doesn't provision or configure your AP when it starts, simple modify "runner.py" (see main function at bottom.)
