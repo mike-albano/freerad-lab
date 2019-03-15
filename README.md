@@ -14,6 +14,8 @@ Use the included "test-freerad-eaptls" .1X provile for OSX.
 
 Use the included "useratexample.org.pfx" certificate in your Android or other clients.
 
+Note, the certificate password is "whatever". You may be prompted for that when importing into certain clients.
+
 ## How to use this/What to modify to meet your needs
 Step 1. Clone this repo.
 
